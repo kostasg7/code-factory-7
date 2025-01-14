@@ -1,5 +1,8 @@
 package gr.aueb.cf.bankapp.model;
 
+/**
+ * An account that allows 20% overdraft of the balance.
+ */
 public class OverdraftAccount {
     private int id;
     private String iban;
@@ -68,6 +71,15 @@ public class OverdraftAccount {
         this.balance = balance;
     }
 
+    /**
+     * Checks if the amount is over 20% of balance and
+     * withdraws the amount if it is not.
+     *
+     * @param amount        the amount to be withdrawn
+     * @param ssn           the given ssn
+     * @throws Exception    if the ssn is not valid or the amount
+     *                      is greater than 20% of the balance.
+     */
     public void withdrawal(double amount, String ssn) throws Exception {
         try {
             if (!isSsnValid(ssn)) {

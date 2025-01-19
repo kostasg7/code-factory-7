@@ -1,5 +1,8 @@
 package gr.aueb.cf.ch14.ch14exercises;
 
+/**
+ * Utility class for string manipulation.
+ */
 public class StringUtils {
 
     private StringUtils() {

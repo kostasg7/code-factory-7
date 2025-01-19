@@ -15,5 +15,8 @@ public class Main {
         StringUtils.uppercase("ambulance is a vehicle");
         StringUtils.reverse("reverse");
         StringUtils.regress("serres");
+
+        ValidationUtils.stringValid("Hello you how are you and how is");
+        ValidationUtils.numValid(-15);
     }
 }

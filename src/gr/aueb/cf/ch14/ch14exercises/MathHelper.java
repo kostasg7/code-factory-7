@@ -1,5 +1,8 @@
 package gr.aueb.cf.ch14.ch14exercises;
 
+/**
+ * Utility class for simple functions.
+ */
 public class MathHelper {
 
     private MathHelper() {
@@ -13,7 +16,7 @@ public class MathHelper {
                 temp = arr[i];
             }
         }
-        System.out.println(temp);
+        System.out.println("The maximum number is: " + temp);
     }
 
     public static void findMin(int[] arr) {
@@ -23,7 +26,7 @@ public class MathHelper {
                 temp = arr[i];
             }
         }
-        System.out.println(temp);
+        System.out.println("The minimum number is: " + temp);
     }
 
     public static void findAverage(int[] arr) {
@@ -32,6 +35,6 @@ public class MathHelper {
             sum += arr[i];
         }
         sum /= arr.length;
-        System.out.println(sum);
+        System.out.println("The average of the array is: " + sum);
     }
 }

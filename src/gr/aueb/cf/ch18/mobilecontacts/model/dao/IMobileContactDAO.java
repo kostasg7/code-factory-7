@@ -4,6 +4,7 @@ import gr.aueb.cf.ch18.mobilecontacts.model.MobileContact;
 
 import java.util.List;
 
+
 public interface IMobileContactDAO {
     MobileContact insert(MobileContact mobileContact);
     MobileContact update(Long id, MobileContact mobileContact);
